@@ -1,0 +1,11 @@
+<%# form_for is a Rails helper for showing forms in the view - it saves the data to the corresponding table %>
+<%# :title and :body refers to the columns in db/migrate/2022102....... file %>
+<%= form_for @post do |form| %>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %><br>
+    <br>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %><br>
+    <br>
+    <%= form.submit %>
+<% end %>
